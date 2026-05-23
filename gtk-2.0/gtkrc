@@ -12,25 +12,25 @@
 # order to not mess up the dark theme.
 
 # Text/base
-gtk-color-scheme = "base_color:#1e1e1e"
-gtk-color-scheme = "text_color:#eeeeee"
+gtk-color-scheme = "base_color:@surface_variant"
+gtk-color-scheme = "text_color:@on_surface"
 # Foreground/background
-gtk-color-scheme = "bg_color:#121212"
-gtk-color-scheme = "fg_color:#eeeeee"
+gtk-color-scheme = "bg_color:@background"
+gtk-color-scheme = "fg_color:@on_surface"
 # Selected foreground/background
-gtk-color-scheme = "selected_bg_color:#8ab4f8"
-gtk-color-scheme = "selected_fg_color:#000000"
+gtk-color-scheme = "selected_bg_color:@primary"
+gtk-color-scheme = "selected_fg_color:@black"
 # Titlebar foreground/background
-gtk-color-scheme = "titlebar_bg_color:#272727"
-gtk-color-scheme = "titlebar_fg_color:#eeeeee"
+gtk-color-scheme = "titlebar_bg_color:@surface"
+gtk-color-scheme = "titlebar_fg_color:@on_surface"
 # Menus
-gtk-color-scheme = "menu_color:#2e2e2e"
+gtk-color-scheme = "menu_color:@surface_variant"
 # Tooltips foreground/background
-gtk-color-scheme = "tooltip_bg_color:#616161"
-gtk-color-scheme = "tooltip_fg_color:#ffffff"
+gtk-color-scheme = "tooltip_bg_color:@surface_variant"
+gtk-color-scheme = "tooltip_fg_color:@white"
 # Links
-gtk-color-scheme = "link_color:#8ab4f8"
-gtk-color-scheme = "visited_link_color:#c58af9"
+gtk-color-scheme = "link_color:@primary"
+gtk-color-scheme = "visited_link_color:@tertiary"
 
 # Set GTK settings
 gtk-auto-mnemonics              = 1

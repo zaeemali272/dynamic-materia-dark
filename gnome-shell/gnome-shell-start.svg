@@ -26,7 +26,7 @@
          style="stop-color:#b2cdf1;stop-opacity:1" />
       <stop
          offset="1"
-         stop-color="#fff"
+         stop-color="@white"
          id="stop5" />
     </linearGradient>
     <linearGradient
@@ -57,7 +57,7 @@
       <path
          d="m 65,177 c -18.502,0 -33.5,14.998 -33.5,33.5 0.008,7.371 4.131,15.807 11.388,23.526 l 12.617,13.171 H 75.02 l 12.137,-13.245 c 6.636,-7.059 11.33,-16.117 11.344,-23.452 0,-18.502 -14.998,-33.5 -33.5,-33.5 z"
          style="marker:none"
-         fill="#ffffff"
+         fill="@white"
          stroke-width="2"
          id="path34-6" />
     </clipPath>
@@ -75,11 +75,11 @@
        id="b">
       <stop
          offset="0"
-         stop-color="#fff"
+         stop-color="@white"
          id="stop11" />
       <stop
          offset=".519"
-         stop-color="#fff"
+         stop-color="@white"
          id="stop13" />
       <stop
          offset=".734"
@@ -169,7 +169,7 @@
          style="stop-color:#c5dcf7;stop-opacity:1" />
       <stop
          offset="1"
-         stop-color="#fff"
+         stop-color="@white"
          id="stop858" />
     </linearGradient>
     <linearGradient
