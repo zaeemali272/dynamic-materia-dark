@@ -1,12 +1,12 @@
 [Desktop Entry]
 Type=X-GNOME-Metatheme
-Name=Materia-dark
-Comment=A Material Design theme
+Name=dynamic-materia-dark
+Comment=A dynamic Material Design theme based on Materia
 Encoding=UTF-8
 
 [X-GNOME-Metatheme]
-GtkTheme=Materia-dark
-MetacityTheme=Materia-dark
+GtkTheme=dynamic-materia-dark
+MetacityTheme=dynamic-materia-dark
 IconTheme=Adwaita
 CursorTheme=Adwaita
 CursorSize=24
