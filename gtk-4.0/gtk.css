@@ -1,3 +1,4 @@
+@import url("../../color-palette.css");
 @keyframes ripple {
   to {
     background-size: 1000% 1000%;
@@ -45,7 +46,7 @@ entry > image:active, gridview > child:active, flowbox > flowboxchild:active {
  * Base States
  */
 .background {
-  background-color: #121212;
+  background-color: @surface;
   color: rgba(255, 255, 255, 0.87);
 }
 
@@ -187,7 +188,7 @@ gridview > child:selected:active {
 
 coverflow > cover {
   box-shadow: 0 3px 1px -2px rgba(0, 0, 0, 0.2), 0 2px 2px 0 rgba(0, 0, 0, 0.14), 0 1px 5px 0 rgba(0, 0, 0, 0.12);
-  background-color: #2e2e2e;
+  background-color: @surface_variant;
   color: rgba(255, 255, 255, 0.87);
 }
 
@@ -495,7 +496,7 @@ spinbutton.vertical > text {
   transition: all 75ms cubic-bezier(0, 0, 0.2, 1);
   border-image: none;
   box-shadow: 0 2px 1px -1px rgba(0, 0, 0, 0.2), 0 1px 1px 0 rgba(0, 0, 0, 0.14), 0 1px 3px 0 rgba(0, 0, 0, 0.12);
-  background-color: #2e2e2e;
+  background-color: @surface_variant;
   color: rgba(255, 255, 255, 0.87);
   caret-color: #8ab4f8;
 }
@@ -511,7 +512,7 @@ spinbutton.vertical > text:drop(active) {
 
 spinbutton.vertical > text:disabled {
   box-shadow: 0 2px 1px -1px rgba(0, 0, 0, 0.2), 0 1px 1px 0 rgba(0, 0, 0, 0.14), 0 1px 3px 0 rgba(0, 0, 0, 0.12);
-  background-color: #1e1e1e;
+  background-color: @surface_variant;
   color: rgba(255, 255, 255, 0.38);
 }
 
@@ -531,7 +532,7 @@ spinbutton.vertical > text.error:focus-within {
 
 spinbutton.vertical > text.error:disabled {
   box-shadow: 0 2px 1px -1px rgba(0, 0, 0, 0.2), 0 1px 1px 0 rgba(0, 0, 0, 0.14), 0 1px 3px 0 rgba(0, 0, 0, 0.12);
-  background-color: #1e1e1e;
+  background-color: @surface_variant;
   color: rgba(255, 255, 255, 0.38);
 }
 
@@ -563,7 +564,7 @@ spinbutton.vertical > text.warning:focus-within {
 
 spinbutton.vertical > text.warning:disabled {
   box-shadow: 0 2px 1px -1px rgba(0, 0, 0, 0.2), 0 1px 1px 0 rgba(0, 0, 0, 0.14), 0 1px 3px 0 rgba(0, 0, 0, 0.12);
-  background-color: #1e1e1e;
+  background-color: @surface_variant;
   color: rgba(255, 255, 255, 0.38);
 }
 
@@ -580,7 +581,7 @@ spinbutton.vertical > text.warning image:disabled {
 }
 
 treeview entry, treeview entry.flat {
-  background-color: #1e1e1e;
+  background-color: @surface_variant;
 }
 
 treeview entry, treeview entry:focus-within, treeview entry.flat, treeview entry.flat:focus-within {
@@ -638,11 +639,11 @@ button {
   min-width: 16px;
   padding: 6px 10px;
   border-radius: 4px;
-  background-color: #2e2e2e;
+  background-color: @surface_variant;
   color: rgba(255, 255, 255, 0.87);
   font-weight: 500;
   box-shadow: 0 3px 1px -2px rgba(0, 0, 0, 0.2), 0 2px 2px 0 rgba(0, 0, 0, 0.14), 0 1px 5px 0 rgba(0, 0, 0, 0.12);
-  background-color: #2e2e2e;
+  background-color: @surface_variant;
 }
 
 
@@ -1428,7 +1429,7 @@ button.combo:only-child arrow:disabled {
   border-spacing: 6px;
   border-radius: 4px;
   box-shadow: 0 2px 4px -1px rgba(0, 0, 0, 0.2), 0 4px 5px 0 rgba(0, 0, 0, 0.14), 0 1px 10px 0 rgba(0, 0, 0, 0.12), inset 0 1px rgba(255, 255, 255, 0.05);
-  background-color: #2e2e2e;
+  background-color: @surface_variant;
 }
 
 .app-notification:backdrop, .toolbar.osd:backdrop {
@@ -1440,7 +1441,7 @@ button.combo:only-child arrow:disabled {
   border-style: solid;
   border-width: 0 1px 1px;
   border-color: rgba(255, 255, 255, 0.12);
-  background-color: #1e1e1e;
+  background-color: @surface_variant;
 }
 
 searchbar > revealer > box {
@@ -1477,7 +1478,7 @@ windowcontrols:not(:only-child):not(.empty).start:dir(rtl), windowcontrols:not(:
   transition: background-color 75ms cubic-bezier(0, 0, 0.2, 1), color 75ms cubic-bezier(0, 0, 0.2, 1);
   border-radius: 4px 4px 0 0;
   box-shadow: 0 3px 1px -2px rgba(0, 0, 0, 0.2), 0 2px 2px 0 rgba(0, 0, 0, 0.14), 0 1px 5px 0 rgba(0, 0, 0, 0.12), inset 0 1px rgba(255, 255, 255, 0.05);
-  background-color: #272727;
+  background-color: @surface;
   color: rgba(255, 255, 255, 0.87);
 }
 
@@ -1486,7 +1487,7 @@ windowcontrols:not(:only-child):not(.empty).start:dir(rtl), windowcontrols:not(:
 }
 
 .titlebar:backdrop {
-  background-color: #1e1e1e;
+  background-color: @surface_variant;
   color: rgba(255, 255, 255, 0.6);
 }
 
@@ -1982,12 +1983,12 @@ treeview.view acceleditor > label {
  * Menus
  */
 menubar {
-  background-color: #272727;
+  background-color: @surface;
   color: rgba(255, 255, 255, 0.87);
 }
 
 menubar:backdrop {
-  background-color: #1e1e1e;
+  background-color: @surface_variant;
   color: rgba(255, 255, 255, 0.6);
 }
 
@@ -2125,7 +2126,7 @@ popover > arrow,
 popover > contents {
   transition: box-shadow 75ms cubic-bezier(0, 0, 0.2, 1);
   box-shadow: 0 2px 4px -1px rgba(0, 0, 0, 0.2), 0 4px 5px 0 rgba(0, 0, 0, 0.14), 0 1px 10px 0 rgba(0, 0, 0, 0.12);
-  background-color: #2e2e2e;
+  background-color: @surface_variant;
   color: rgba(255, 255, 255, 0.87);
 }
 
@@ -2412,7 +2413,7 @@ scrollbar.overlay-indicator:not(.dragging):not(.hovering).vertical > range > tro
 }
 
 scrollbar.overlay-indicator.dragging, scrollbar.overlay-indicator.hovering {
-  background-color: #2e2e2e;
+  background-color: @surface_variant;
 }
 
 /**
@@ -2728,7 +2729,7 @@ scale > trough > highlight {
 }
 
 scale > trough > highlight:disabled {
-  background-color: #121212;
+  background-color: @surface;
   background-image: image(rgba(255, 255, 255, 0.26));
 }
 
@@ -3007,7 +3008,7 @@ levelbar > trough > block.empty {
 window.dialog.print paper {
   border-radius: 4px;
   box-shadow: 0 2px 1px -1px rgba(0, 0, 0, 0.2), 0 1px 1px 0 rgba(0, 0, 0, 0.14), 0 1px 3px 0 rgba(0, 0, 0, 0.12);
-  background-color: #1e1e1e;
+  background-color: @surface_variant;
   color: rgba(255, 255, 255, 0.87);
 }
 
@@ -3022,7 +3023,7 @@ frame,
 .frame {
   border-radius: 4px;
   box-shadow: 0 2px 1px -1px rgba(0, 0, 0, 0.2), 0 1px 1px 0 rgba(0, 0, 0, 0.14), 0 1px 3px 0 rgba(0, 0, 0, 0.12);
-  background-color: #1e1e1e;
+  background-color: @surface_variant;
   color: rgba(255, 255, 255, 0.87);
 }
 
@@ -3322,7 +3323,7 @@ expander-widget > box > title:active > expander {
 calendar {
   border-radius: 4px;
   box-shadow: 0 2px 1px -1px rgba(0, 0, 0, 0.2), 0 1px 1px 0 rgba(0, 0, 0, 0.14), 0 1px 3px 0 rgba(0, 0, 0, 0.12);
-  background-color: #1e1e1e;
+  background-color: @surface_variant;
   color: rgba(255, 255, 255, 0.87);
 }
 
@@ -3428,7 +3429,7 @@ calendar > grid > label.day-number:selected:active {
 window.dialog.message.csd.background {
   min-width: 280px;
   border-radius: 4px;
-  background-color: #2e2e2e;
+  background-color: @surface_variant;
 }
 
 window.dialog.message > .titlebar {
@@ -3915,7 +3916,7 @@ colorswatch.light {
 }
 
 colorswatch#add-color-button {
-  background-color: #2e2e2e;
+  background-color: @surface_variant;
   color: rgba(255, 255, 255, 0.87);
 }
 
@@ -3927,7 +3928,7 @@ colorchooser .popover.osd {
   transition: box-shadow 75ms cubic-bezier(0, 0, 0.2, 1);
   border-radius: 4px;
   box-shadow: 0 2px 4px -1px rgba(0, 0, 0, 0.2), 0 4px 5px 0 rgba(0, 0, 0, 0.14), 0 1px 10px 0 rgba(0, 0, 0, 0.12), inset 0 1px rgba(255, 255, 255, 0.05);
-  background-color: #2e2e2e;
+  background-color: @surface_variant;
 }
 
 colorchooser .popover.osd:backdrop {
@@ -3961,11 +3962,11 @@ window.solid-csd {
   border-radius: 0;
   box-shadow: none;
   box-shadow: inset 0 1px rgba(255, 255, 255, 0.05);
-  background-color: #272727;
+  background-color: @surface;
 }
 
 window.solid-csd:backdrop {
-  background-color: #1e1e1e;
+  background-color: @surface_variant;
 }
 
 window.maximized, window.fullscreen, window.tiled, window.tiled-top, window.tiled-left, window.tiled-right, window.tiled-bottom {
@@ -4019,7 +4020,7 @@ shortcut > .keycap {
   padding-right: 8px;
   border-radius: 4px;
   box-shadow: 0 2px 1px -1px rgba(0, 0, 0, 0.2), 0 1px 1px 0 rgba(0, 0, 0, 0.14), 0 1px 3px 0 rgba(0, 0, 0, 0.12);
-  background-color: #2e2e2e;
+  background-color: @surface_variant;
   color: rgba(255, 255, 255, 0.87);
   font-size: smaller;
 }
